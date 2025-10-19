@@ -1,8 +1,8 @@
 {
-  "short_name": "",
+  "short_name": "M.R. Engineering website",
   "name": "",
   "icons": [{
-    "src": "icon.png",
+    "src": "img/logo.png",
     "type": "image/png",
     "sizes": "192x192"
   }],

@@ -245,7 +245,8 @@ textarea {
   }
 }
 
-#description-section {
+#description-section, #contact-section {
+  padding: 2em;
   width: 85%;
 }
 
