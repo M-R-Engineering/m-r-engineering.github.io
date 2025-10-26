@@ -14,7 +14,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+#summary-section > div > p {
+  color: rgba(255, 255, 255, 0.70);
+}
 .logo {
   width: 55px;
   margin: 5px 10px;
@@ -52,6 +54,26 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.10);
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
   background: rgba(255, 255, 255, 0.05);
+}
+.stat-container {
+  margin-bottom: calc(var(--spacing) * 10);
+  margin-top: calc(var(--spacing) * 10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.stat-key {
+  font-size: var(--text-5xl);
+  line-height: var(--text-5xl--line-height);
+  font-weight: 400;
+  background: linear-gradient(90deg, #00B8DBFF 0%, #47A5EAFF 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 @keyframes flashing {
@@ -100,7 +122,6 @@ h1.dev {
   background: linear-gradient(90deg, rgba(71, 165, 234, 0.20) 0%, rgba(123, 97, 255, 0.20) 100%);
   filter: blur(40px);
 }
-
 
 .mr-button {
   font-family: 'Open Sans', sans-serif;
