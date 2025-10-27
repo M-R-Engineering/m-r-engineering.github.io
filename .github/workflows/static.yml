@@ -34,6 +34,7 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+      - run: npm run tailwind:build
       - run: npm run build:v2
       - name: Setup Pages
         uses: actions/configure-pages@v5

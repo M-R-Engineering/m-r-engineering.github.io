@@ -13,6 +13,7 @@
     "start": "webpack serve --open --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js",
     "build:v2": "webpack --config webpack.config.v2.js",
+    "tailwind:build" : "npx @tailwindcss/cli -i ./css/style_v2.css -o ./css/style.css",
     "tailwind:watch" : "npx @tailwindcss/cli -i ./css/style_v2.css -o ./css/style.css --watch"
   },
   "devDependencies": {
