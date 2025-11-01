@@ -8,7 +8,7 @@ html {
 body {
   background-color: #000000;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
@@ -19,7 +19,7 @@ body {
 }
 .logo {
   width: 55px;
-  margin: 5px 10px;
+  margin: 5px 10px 5px 0;
 }
 
 .available-label {
@@ -46,10 +46,6 @@ body {
   border-bottom: 1px solid #FFFFFF;
 }
 
-#main-section {
-  margin-top: 100px;
-  height: 500px;
-}
 #stats-section {
   border-top: 1px solid rgba(255, 255, 255, 0.10);
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
@@ -91,7 +87,16 @@ body {
   padding: 10px 20px;
   text-decoration: none;
 }
-.nav-link:hover, .nav-link.selected {
+
+.nav-link:not(.selected):hover {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: -0.312px;
+}
+.nav-link.selected {
   color: #47A5EA;
   border-bottom: #47A5EA 2px solid;
 }
@@ -119,6 +124,22 @@ h1.dev {
   width: 45%;
 }
 
+.mr-button {
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.15px;
+  padding: 5px 10px;
+  margin: 10px 5px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .halo {
   position: relative;
   display: block;
@@ -127,19 +148,6 @@ h1.dev {
   border-radius: 45% 45% 45% 45%;
   background: linear-gradient(90deg, rgba(71, 165, 234, 0.20) 0%, rgba(123, 97, 255, 0.20) 100%);
   filter: blur(40px);
-}
-
-.mr-button {
-  font-family: 'Open Sans', sans-serif;
-  border: 1px solid rgba(255, 255, 255, 0);
-  border-radius: 10px;
-  padding: 5px 10px;
-  margin: 10px 5px;
-  font-size: 14px;
-  color: #FFFFFF;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 .show-mission-button {
   background: linear-gradient(to right,
@@ -157,7 +165,6 @@ h1.dev {
   line-height: 20px;
 }
 .contact-me-button {
-  color: #0064BC;
   border: 1px solid #0064BC;
   background-color: white;
 }

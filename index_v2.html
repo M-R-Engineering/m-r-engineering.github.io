@@ -2,6 +2,7 @@
 <html class="no-js" lang="fr">
 
 <head>
+  <meta charset="utf-8">
   <title>Maxime ROSE - Expert en développement </title>
   <meta name="description"
         content="Site vitrine de Maxime ROSE, qui propose ses services en développement et conseils informatiques.">
@@ -38,15 +39,14 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name="theme-color" content="#fafafa">
 
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
-<!--<script src="js/app.js"></script>-->
+<script src="js/app.js"></script>
 <div class="navbar pb-2.5 frosted-dark flex flex-row justify-between">
-  <div class="logo-name-container flex flex-row content-center ml-2.5">
+  <div class="logo-name-container flex flex-row ml-5 items-center">
     <img class="logo" src="img/logo.png" alt="logo M.R. Engineering"/>
     <span>maxime-rose@mr-engineering:$<span class="flashing-underscore">_</span></span>
   </div>
@@ -57,8 +57,8 @@
   </div>
 </div>
 
-<div id="main-section" class="flex flex-col justify-start gap-50">
-  <div id="summary-section" class="flex flex-row justify-start gap-50 ml-2.5">
+<div id="main-section" class="flex flex-col justify-start gap-50 mt-40">
+  <div id="summary-section" class="flex flex-row justify-start gap-50 ml-5">
     <div class="flex flex-col justify-around content-center gap-5">
       <div class="available-label self-start ml-1.5 pt-1.5 pb-1.5 pl-2.5 pr-2.5">
         <i class="bi bi-calendar-check mr-1.5"></i>
@@ -81,8 +81,8 @@
         </div>
       </div>
       <div class="flex flex-row justify-start h-15 content-center gap-2">
-        <div class="mr-icon-button m-2 p-2.5"><img class="mr-icon" src="icon/github.svg" alt="Github logo"/></div>
-        <div class="mr-icon-button m-2 p-2.5"><img class="mr-icon" src="icon/linkedin.svg" alt="Linkedin logo"/></div>
+        <div class="mr-icon-button m-2 p-2.5" onclick="openLinkButton(LINKS.github)"><img class="mr-icon" src="icon/github.svg" alt="Github logo"/></div>
+        <div class="mr-icon-button m-2 p-2.5" onclick="openLinkButton(LINKS.linkedin)"><img class="mr-icon" src="icon/linkedin.svg" alt="Linkedin logo"/></div>
       </div>
     </div>
     <div class="light-hole-container lg:block sm:hidden">
@@ -111,5 +111,10 @@
     </div>
   </div>
 </div>
+
+<!--COPYRIGHT NOTICE.-->
+<footer class="flex flex-row justify-center items-center pb-5 pt-5 text-xs">
+  <span>© 2025 Maxime ROSE - M.R. Engineering. Design by <a class="underline cursor-pointer" onclick="openLinkButton(LINKS.benhance_elodie)" target="_blank">Elodie Rose</a>. Tous droits réservés.</span>
+</footer>
 </body>
 </html>
